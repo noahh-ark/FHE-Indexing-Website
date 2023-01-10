@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a website to track FHE Groups' indexing totals in the Provo YSA 24th Ward's competition.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- Lobster Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Group 3 Totals</title>
+    <script src="./Group_3.js"></script>
+
+</head>
+<body onload="start_me_up()">
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <svg viewbox="0 0 60 60">
+                    <line x1="5%" y1="50%" x2="95%" y2="50%" />
+                    <line x1="5%" y1="50%" x2="95%" y2="50%" />
+                </svg>
+            </div>
+            <ul>
+                <li><a href="../index.html">Standings</a></li>
+                <li><a href="./G1.html">Group 1</a></li>
+                <li><a href="./2.html">Group 2</a></li>
+                <li><a href="./3.html">Group 3</a></li>
+                <li><a href="./4.html">Group 4</a></li>
+                <li><a href="./5.html">Group 5</a></li>
+                <li><a href="./6.html">Group 6</a></li>
+            </ul>
+        </nav>
+        <div class="head">
+            <h1>Group 3</h1>
+        </div>
+    </header>
+
+    <main>
+        <h3>Group Members</h3>
+        
+        <div class="loader">
+            <img class="turtle" src="../Images/Loader-Turtle.png" width="100" alt="Tom the turtle">
+            <img class="apple" src="../Images/Loader-Apple.png" width="30" alt="Apple">
+            <p>Loading...</p>
+        </div>
+        
+        <div id="data"></div>
+        <div id="exception" onclick="this.style.display='none'"></div>
+    </main>
+
+
+    <script>
+        document.querySelector(".menu-icon").addEventListener("click", function () {
+            this.parentElement.classList.toggle("close");
+        });
+    </script>
+</body>
+</html>
