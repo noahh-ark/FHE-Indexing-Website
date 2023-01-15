@@ -362,6 +362,20 @@ h4 {
     margin: 0;
 }
 
+.tiers {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    margin-top: 15rem;
+    color: #2f378a;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.tier {
+    margin: 2rem;
+}
+
 .loader {
     z-index: 1;
     display: flex;
@@ -520,6 +534,15 @@ h4 {
         margin: 0;
     }
 
+    .tiers {
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    
+    .tier {
+        margin: 0.5rem;
+        /* font-size: 1rem; */
+    }
 }
   
 @media (min-width: 850px) {
@@ -546,6 +569,14 @@ h4 {
     .standings {
         margin: 10rem 10rem 10rem 18vw;
     }
+
+    .tiers {
+        flex-direction: row;
+    }
+    
+    .tier {
+        margin: 1rem;
+    }
 }
 
 @media (min-width: 1100px) {
@@ -556,5 +587,9 @@ h4 {
     .standings {
         align-self: center;
         margin: 10rem 10rem 10rem 10rem;
+    }
+
+    .tier {
+        margin: 2rem;
     }
 }
